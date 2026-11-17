@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f7b81c">
+<meta name="description" content="Kenali pencukur, barber, dan stylist Salon ANIA serta lihat galeri hasil cukur, warna, dan perawatan rambut.">
+<meta property="og:title" content="Pencukur & Galeri Hasil Cukur — Salon ANIA">
+<meta property="og:description" content="Kenali pencukur, barber, dan stylist Salon ANIA serta lihat galeri hasil cukur, warna, dan perawatan rambut.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/salon-ania-logo.jpg">
+<title>Pencukur & Galeri Hasil Cukur — Salon ANIA</title>
+<link rel="icon" href="assets/salon-ania-logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+<div class="loader" id="loader" role="status" aria-live="polite" aria-label="Memuat Salon ANIA">
+  <div class="loader-panel top"></div><div class="loader-panel bottom"></div>
+  <div class="loader-stage">
+    <div class="loader-ring">
+      <svg class="ring" viewBox="0 0 120 120" aria-hidden="true"><circle class="ring-track" cx="60" cy="60" r="54"/><circle class="ring-bar" cx="60" cy="60" r="54"/></svg>
+      <div class="loader-logo"><img src="assets/salon-ania-logo.jpg" alt=""></div>
+      <svg class="loader-scissors" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" aria-hidden="true">
+        <g class="blade b1"><path d="M56 8 L22 44"/><circle cx="15" cy="51" r="7" fill="#fff9ec"/></g>
+        <g class="blade b2"><path d="M8 8 L42 44"/><circle cx="49" cy="51" r="7" fill="#fff9ec"/></g>
+        <circle cx="32" cy="32" r="3" fill="#e4472b" stroke="none"/>
+      </svg>
+      <div class="loader-hair" aria-hidden="true"><i></i><i></i><i></i></div>
+    </div>
+    <div class="loader-brand" aria-hidden="true"><span style="animation-delay:0.15s">S</span><span style="animation-delay:0.23s">A</span><span style="animation-delay:0.31s">L</span><span style="animation-delay:0.39s">O</span><span style="animation-delay:0.47s">N</span><span style="animation-delay:0.55s">&nbsp;</span><span style="animation-delay:0.63s">A</span><span style="animation-delay:0.71s">N</span><span style="animation-delay:0.79s">I</span><span style="animation-delay:0.87s">A</span></div>
+    <p class="loader-msg" id="loaderMsg">Menyiapkan kursi</p>
+    <span class="loader-count" id="loaderCount">0%</span>
+  </div>
+</div>
+<header class="header" id="top">
+  <div class="header-inner">
+    <a class="logo" href="index.html" aria-label="Salon ANIA — beranda"><img src="assets/salon-ania-logo.jpg" alt="Logo Salon ANIA"><span><b>SALON ANIA</b><small>BEAUTY &amp; HAIR STUDIO</small></span></a>
+    <nav class="nav" id="nav" aria-label="Navigasi utama"><a class="nav-link" style="--n:0" href="index.html"><span class="nl-i"><iconify-icon icon="lucide:house" aria-hidden="true"></iconify-icon></span><span class="nl-t">Beranda</span><span class="nl-a"><iconify-icon icon="lucide:arrow-up-right" aria-hidden="true"></iconify-icon></span></a><a class="nav-link" style="--n:1" href="index.html#layanan"><span class="nl-i"><iconify-icon icon="lucide:sparkles" aria-hidden="true"></iconify-icon></span><span class="nl-t">Layanan</span><span class="nl-a"><iconify-icon icon="lucide:arrow-up-right" aria-hidden="true"></iconify-icon></span></a><a class="nav-link active" style="--n:2" href="tim.html"><span class="nl-i"><iconify-icon icon="lucide:scissors" aria-hidden="true"></iconify-icon></span><span class="nl-t">Pencukur</span><span class="nl-a"><iconify-icon icon="lucide:arrow-up-right" aria-hidden="true"></iconify-icon></span></a><a class="nav-link" style="--n:3" href="tim.html#galeri"><span class="nl-i"><iconify-icon icon="lucide:images" aria-hidden="true"></iconify-icon></span><span class="nl-t">Galeri</span><span class="nl-a"><iconify-icon icon="lucide:arrow-up-right" aria-hidden="true"></iconify-icon></span></a><a class="nav-link" style="--n:4" href="testimoni.html"><span class="nl-i"><iconify-icon icon="lucide:message-square-heart" aria-hidden="true"></iconify-icon></span><span class="nl-t">Testimoni</span><span class="nl-a"><iconify-icon icon="lucide:arrow-up-right" aria-hidden="true"></iconify-icon></span></a><a class="nav-link" style="--n:5" href="index.html#kontak"><span class="nl-i"><iconify-icon icon="lucide:phone" aria-hidden="true"></iconify-icon></span><span class="nl-t">Kontak</span><span class="nl-a"><iconify-icon icon="lucide:arrow-up-right" aria-hidden="true"></iconify-icon></span></a><a class="btn btn-primary btn-sm nav-cta" style="--n:7" data-wa href="#"><iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon> Booking<span class="nl-long">via WhatsApp</span></a><div class="nav-extra" style="--n:8"><a class="social ig" data-ig href="#"><iconify-icon icon="mdi:instagram" aria-hidden="true"></iconify-icon> Instagram</a><a class="social wa" data-wa href="#"><iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon> WhatsApp</a><p><iconify-icon icon="lucide:map-pin" aria-hidden="true"></iconify-icon> Ruko Villa Jakasetia, Bekasi Selatan<br><iconify-icon icon="lucide:phone" aria-hidden="true"></iconify-icon> <a data-tel href="#" data-phone-text>021 8242 1555</a></p></div></nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false" aria-controls="nav"><iconify-icon icon="lucide:menu" class="i-open" aria-hidden="true"></iconify-icon><iconify-icon icon="lucide:x" class="i-close" aria-hidden="true"></iconify-icon></button>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <iconify-icon icon="lucide:scissors" class="hero-art-mini" aria-hidden="true"></iconify-icon>
+  <div class="container">
+    <div class="crumbs rise" style="--i:0"><a href="index.html">Beranda</a> <iconify-icon icon="lucide:chevron-right" aria-hidden="true"></iconify-icon> <span>Pencukur &amp; Galeri</span></div>
+    <span class="eyebrow rise" style="--i:1"><iconify-icon icon="lucide:users" aria-hidden="true"></iconify-icon> Tim Salon ANIA</span>
+    <h1 class="rise" style="--i:2">Kenali tangan <em class="hl">di balik gayamu.</em></h1>
+    <p class="rise" style="--i:3">Barber presisi, stylist kreatif, dan terapis spa yang ramah. Pilih favoritmu, lalu booking langsung lewat WhatsApp. Scroll ke bawah untuk galeri hasil cukur.</p>
+    <div class="hero-cta rise" style="--i:4;margin-top:26px"><a class="btn btn-primary" href="#galeri"><iconify-icon icon="lucide:images" aria-hidden="true"></iconify-icon> Lihat galeri</a><a class="btn btn-ghost" data-wa href="#"><iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon> Tanya jadwal</a></div>
+  </div>
+</section>
+
+<section class="section" id="pencukur" style="padding-top:clamp(30px,5vw,60px)">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow"><iconify-icon icon="lucide:crown" aria-hidden="true"></iconify-icon> Pencukur &amp; stylist</span><h2>Pilih <em>ahlinya</em></h2><p>Setiap anggota tim punya keahlian khusus. Klik tombol booking untuk langsung chat dan menanyakan jadwal.</p></div>
+    <div class="carousel" data-carousel>
+  <div class="track" tabindex="0" role="group" aria-roledescription="carousel" aria-label="Tim pencukur dan stylist Salon ANIA"><article class="slide" aria-roledescription="slide">
+  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Foto Raka Pratama, Master Barber Salon ANIA" loading="lazy" draggable="false">
+  <span class="role"><iconify-icon icon="lucide:scissors" aria-hidden="true"></iconify-icon> Master Barber</span>
+  <div class="slide-info">
+    <h3>Raka Pratama</h3>
+    <p>Spesialis potongan pria yang rapi dan tajam. Dari fade modern sampai gaya klasik.</p>
+    <div class="tags"><span>Skin fade</span><span>Classic cut</span><span>Beard trim</span></div>
+    <div class="slide-foot"><a class="btn btn-sun btn-sm" data-wa="Halo Salon ANIA, saya ingin booking dengan Raka Pratama (Master Barber). Mohon info jadwal yang tersedia." href="#"><iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon> Booking Raka</a><a class="icon-btn" data-ig href="#" aria-label="Instagram Salon ANIA"><iconify-icon icon="mdi:instagram" aria-hidden="true"></iconify-icon></a></div>
+  </div>
+</article><article class="slide" aria-roledescription="slide">
+  <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80" alt="Foto Dimas Aditya, Senior Barber Salon ANIA" loading="lazy" draggable="false">
+  <span class="role"><iconify-icon icon="lucide:crown" aria-hidden="true"></iconify-icon> Senior Barber</span>
+  <div class="slide-info">
+    <h3>Dimas Aditya</h3>
+    <p>Suka bereksperimen dengan tekstur dan volume agar gayamu terlihat berkarakter.</p>
+    <div class="tags"><span>Pompadour</span><span>Undercut</span><span>Hair styling</span></div>
+    <div class="slide-foot"><a class="btn btn-sun btn-sm" data-wa="Halo Salon ANIA, saya ingin booking dengan Dimas Aditya (Senior Barber). Mohon info jadwal yang tersedia." href="#"><iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon> Booking Dimas</a><a class="icon-btn" data-ig href="#" aria-label="Instagram Salon ANIA"><iconify-icon icon="mdi:instagram" aria-hidden="true"></iconify-icon></a></div>
+  </div>
+</article><article class="slide" aria-roledescription="slide">
+  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80" alt="Foto Rani Kusuma, Hair Stylist Salon ANIA" loading="lazy" draggable="false">
+  <span class="role"><iconify-icon icon="lucide:sparkles" aria-hidden="true"></iconify-icon> Hair Stylist</span>
+  <div class="slide-info">
+    <h3>Rani Kusuma</h3>
+    <p>Membantu menemukan potongan yang cocok dengan bentuk wajah dan gaya hidupmu.</p>
+    <div class="tags"><span>Layer cut</span><span>Bob</span><span>Blow out</span></div>
+    <div class="slide-foot"><a class="btn btn-sun btn-sm" data-wa="Halo Salon ANIA, saya ingin booking dengan Rani Kusuma (Hair Stylist). Mohon info jadwal yang tersedia." href="#"><iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon> Booking Rani</a><a class="icon-btn" data-ig href="#" aria-label="Instagram Salon ANIA"><iconify-icon icon="mdi:instagram" aria-hidden="true"></iconify-icon></a></div>
+  </div>
+</article><article class="slide" aria-roledescription="slide">
+  <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80" alt="Foto Sinta Maharani, Hair Colorist Salon ANIA" loading="lazy" draggable="false">
+  <span class="role"><iconify-icon icon="lucide:palette" aria-hidden="true"></iconify-icon> Hair Colorist</span>
+  <div class="slide-info">
+    <h3>Sinta Maharani</h3>
+    <p>Ahli warna: dari tone natural sampai pastel yang berani, tetap menjaga kesehatan rambut.</p>
+    <div class="tags"><span>Balayage</span><span>Highlight</span><span>Fashion color</span></div>
+    <div class="slide-foot"><a class="btn btn-sun btn-sm" data-wa="Halo Salon ANIA, saya ingin booking dengan Sinta Maharani (Hair Colorist). Mohon info jadwal yang tersedia." href="#"><iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon> Booking Sinta</a><a class="icon-btn" data-ig href="#" aria-label="Instagram Salon ANIA"><iconify-icon icon="mdi:instagram" aria-hidden="true"></iconify-icon></a></div>
+  </div>
+</article><article class="slide" aria-roledescription="slide">
+  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80" alt="Foto Bayu Nugroho, Hair Spa Therapist Salon ANIA" loading="lazy" draggable="false">
+  <span class="role"><iconify-icon icon="lucide:droplets" aria-hidden="true"></iconify-icon> Hair Spa Therapist</span>
+  <div class="slide-info">
+    <h3>Bayu Nugroho</h3>
+    <p>Fokus pada perawatan kulit kepala dan rambut agar kembali lembut, kuat, dan berkilau.</p>
+    <div class="tags"><span>Creambath</span><span>Hair spa</span><span>Scalp care</span></div>
+    <div class="slide-foot"><a class="btn btn-sun btn-sm" data-wa="Halo Salon ANIA, saya ingin booking dengan Bayu Nugroho (Hair Spa Therapist). Mohon info jadwal yang tersedia." href="#"><iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon> Booking Bayu</a><a class="icon-btn" data-ig href="#" aria-label="Instagram Salon ANIA"><iconify-icon icon="mdi:instagram" aria-hidden="true"></iconify-icon></a></div>
+  </div>
+</article></div>
+  <div class="c-controls"><div class="c-bar" aria-hidden="true"><span></span></div><div class="arrows"><button class="arrow" data-prev aria-label="Sebelumnya"><iconify-icon icon="lucide:arrow-left" aria-hidden="true"></iconify-icon></button><button class="arrow" data-next aria-label="Berikutnya"><iconify-icon icon="lucide:arrow-right" aria-hidden="true"></iconify-icon></button></div></div>
+</div>
+  </div>
+</section>
+
+<section class="section" id="galeri" style="background:var(--paper);border-radius:var(--r-xl)">
+  <div class="container">
+    <div class="section-head center reveal"><span class="eyebrow"><iconify-icon icon="lucide:images" aria-hidden="true"></iconify-icon> Galeri hasil cukur</span><h2>Hasil terbaik, <em>dari kursi kami</em></h2><p>Klik foto untuk memperbesar. Gunakan filter untuk melihat kategori favoritmu.</p></div>
+    <div class="filters center" data-filter-group="#galGrid" role="group" aria-label="Filter galeri"><button class="chip active" data-filter="all" aria-pressed="true"><iconify-icon icon="lucide:layout-grid" aria-hidden="true"></iconify-icon> Semua</button><button class="chip" data-filter="pria" aria-pressed="false"><iconify-icon icon="lucide:scissors" aria-hidden="true"></iconify-icon> Pria</button><button class="chip" data-filter="wanita" aria-pressed="false"><iconify-icon icon="lucide:sparkles" aria-hidden="true"></iconify-icon> Wanita</button><button class="chip" data-filter="warna" aria-pressed="false"><iconify-icon icon="lucide:palette" aria-hidden="true"></iconify-icon> Warna</button><button class="chip" data-filter="perawatan" aria-pressed="false"><iconify-icon icon="lucide:droplets" aria-hidden="true"></iconify-icon> Perawatan</button></div>
+    <div class="gallery" id="galGrid"><button class="g-item reveal" type="button" data-cat="pria" data-label="Barber" aria-label="Perbesar foto: Skin Fade &amp; Line-up"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=700&q=80" data-full="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1400&q=80" alt="Skin Fade &amp; Line-up" loading="lazy"><span class="over"><small>Barber</small><b>Skin Fade &amp; Line-up</b></span><span class="zoom"><iconify-icon icon="lucide:maximize-2" aria-hidden="true"></iconify-icon></span></button><button class="g-item reveal" type="button" data-cat="wanita" data-label="Styling" aria-label="Perbesar foto: Blow Out Volume"><img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=700&q=80" data-full="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1400&q=80" alt="Blow Out Volume" loading="lazy"><span class="over"><small>Styling</small><b>Blow Out Volume</b></span><span class="zoom"><iconify-icon icon="lucide:maximize-2" aria-hidden="true"></iconify-icon></span></button><button class="g-item reveal" type="button" data-cat="warna" data-label="Coloring" aria-label="Perbesar foto: Pastel Lavender"><img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=700&q=80" data-full="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?auto=format&fit=crop&w=1400&q=80" alt="Pastel Lavender" loading="lazy"><span class="over"><small>Coloring</small><b>Pastel Lavender</b></span><span class="zoom"><iconify-icon icon="lucide:maximize-2" aria-hidden="true"></iconify-icon></span></button><button class="g-item reveal" type="button" data-cat="pria" data-label="Barber" aria-label="Perbesar foto: Classic Cut &amp; Styling"><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=700&q=80" data-full="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=1400&q=80" alt="Classic Cut &amp; Styling" loading="lazy"><span class="over"><small>Barber</small><b>Classic Cut &amp; Styling</b></span><span class="zoom"><iconify-icon icon="lucide:maximize-2" aria-hidden="true"></iconify-icon></span></button><button class="g-item reveal" type="button" data-cat="warna" data-label="Coloring" aria-label="Perbesar foto: Pink Flash Color"><img src="https://images.unsplash.com/photo-1470259078422-826894b933aa?auto=format&fit=crop&w=700&q=80" data-full="https://images.unsplash.com/photo-1470259078422-826894b933aa?auto=format&fit=crop&w=1400&q=80" alt="Pink Flash Color" loading="lazy"><span class="over"><small>Coloring</small><b>Pink Flash Color</b></span><span class="zoom"><iconify-icon icon="lucide:maximize-2" aria-hidden="true"></iconify-icon></span></button><button class="g-item reveal" type="button" data-cat="perawatan" data-label="Perawatan" aria-label="Perbesar foto: Relaxing Wash &amp; Spa"><img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=700&q=80" data-full="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1400&q=80" alt="Relaxing Wash &amp; Spa" loading="lazy"><span class="over"><small>Perawatan</small><b>Relaxing Wash &amp; Spa</b></span><span class="zoom"><iconify-icon icon="lucide:maximize-2" aria-hidden="true"></iconify-icon></span></button><button class="g-item reveal" type="button" data-cat="pria" data-label="Barber" aria-label="Perbesar foto: Detail Cut &amp; Line"><img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=700&q=80" data-full="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=1400&q=80" alt="Detail Cut &amp; Line" loading="lazy"><span class="over"><small>Barber</small><b>Detail Cut &amp; Line</b></span><span class="zoom"><iconify-icon icon="lucide:maximize-2" aria-hidden="true"></iconify-icon></span></button><button class="g-item reveal" type="button" data-cat="wanita" data-label="Styling" aria-label="Perbesar foto: Loose Waves Finish"><img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=700&q=80" data-full="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=1400&q=80" alt="Loose Waves Finish" loading="lazy"><span class="over"><small>Styling</small><b>Loose Waves Finish</b></span><span class="zoom"><iconify-icon icon="lucide:maximize-2" aria-hidden="true"></iconify-icon></span></button><button class="g-item reveal" type="button" data-cat="pria" data-label="Barber" aria-label="Perbesar foto: Hot Towel Shave"><img src="https://images.unsplash.com/photo-1596728325488-58c87691e9af?auto=format&fit=crop&w=700&q=80" data-full="https://images.unsplash.com/photo-1596728325488-58c87691e9af?auto=format&fit=crop&w=1400&q=80" alt="Hot Towel Shave" loading="lazy"><span class="over"><small>Barber</small><b>Hot Towel Shave</b></span><span class="zoom"><iconify-icon icon="lucide:maximize-2" aria-hidden="true"></iconify-icon></span></button><button class="g-item reveal" type="button" data-cat="perawatan" data-label="Perawatan" aria-label="Perbesar foto: Curl Definition"><img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=700&q=80" data-full="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=1400&q=80" alt="Curl Definition" loading="lazy"><span class="over"><small>Perawatan</small><b>Curl Definition</b></span><span class="zoom"><iconify-icon icon="lucide:maximize-2" aria-hidden="true"></iconify-icon></span></button><button class="g-item reveal" type="button" data-cat="wanita" data-label="Hair Cut" aria-label="Perbesar foto: Soft Bob Cut"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=700&q=80" data-full="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=1400&q=80" alt="Soft Bob Cut" loading="lazy"><span class="over"><small>Hair Cut</small><b>Soft Bob Cut</b></span><span class="zoom"><iconify-icon icon="lucide:maximize-2" aria-hidden="true"></iconify-icon></span></button><button class="g-item reveal" type="button" data-cat="perawatan" data-label="Perawatan" aria-label="Perbesar foto: Smooth &amp; Shiny Long Hair"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80" data-full="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1400&q=80" alt="Smooth &amp; Shiny Long Hair" loading="lazy"><span class="over"><small>Perawatan</small><b>Smooth &amp; Shiny Long Hair</b></span><span class="zoom"><iconify-icon icon="lucide:maximize-2" aria-hidden="true"></iconify-icon></span></button><button class="g-item reveal" type="button" data-cat="warna" data-label="Coloring" aria-label="Perbesar foto: Natural Brunette Tone"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=700&q=80" data-full="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1400&q=80" alt="Natural Brunette Tone" loading="lazy"><span class="over"><small>Coloring</small><b>Natural Brunette Tone</b></span><span class="zoom"><iconify-icon icon="lucide:maximize-2" aria-hidden="true"></iconify-icon></span></button><button class="g-item reveal" type="button" data-cat="wanita" data-label="Makeup" aria-label="Perbesar foto: Soft Glam Makeup"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=700&q=80" data-full="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1400&q=80" alt="Soft Glam Makeup" loading="lazy"><span class="over"><small>Makeup</small><b>Soft Glam Makeup</b></span><span class="zoom"><iconify-icon icon="lucide:maximize-2" aria-hidden="true"></iconify-icon></span></button></div>
+    <p class="note"><iconify-icon icon="mdi:instagram" aria-hidden="true"></iconify-icon> Lebih banyak inspirasi di Instagram <a data-ig href="#" data-ig-handle style="font-weight:800;color:var(--tomato)">@salonania</a></p>
+  </div>
+</section>
+
+<div style="height:clamp(40px,6vw,80px)"></div>
+<section class="section" id="kontak" style="padding-top:0">
+  <div class="container">
+    <div class="contact-card reveal">
+      <div>
+        <span class="eyebrow"><iconify-icon icon="lucide:calendar-heart" aria-hidden="true"></iconify-icon> Ayo, booking sekarang</span>
+        <h2>Mau hasil seperti <em>di galeri?</em></h2>
+        <p class="lead">Bawa foto referensi gayamu, lalu chat tim kami. Kami bantu pilihkan pencukur dan jadwal yang paling pas.</p>
+        <div class="contact-actions">
+          <a class="btn btn-dark" data-wa href="#"><iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon> Chat via WhatsApp</a>
+          <a class="btn btn-ghost" data-tel href="#"><iconify-icon icon="lucide:phone-call" aria-hidden="true"></iconify-icon> Telepon salon</a>
+        </div>
+      </div>
+      <div class="info-list">
+        <a class="info ig" data-ig href="#"><span class="ico"><iconify-icon icon="mdi:instagram" aria-hidden="true"></iconify-icon></span><span class="txt"><small>Instagram</small><b data-ig-handle>@salonania</b></span><span class="go"><iconify-icon icon="lucide:arrow-up-right" aria-hidden="true"></iconify-icon></span></a>
+        <a class="info wa" data-wa href="#"><span class="ico"><iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon></span><span class="txt"><small>WhatsApp</small><b>Chat &amp; reservasi</b></span><span class="go"><iconify-icon icon="lucide:arrow-up-right" aria-hidden="true"></iconify-icon></span></a>
+        <a class="info tel" data-tel href="#"><span class="ico"><iconify-icon icon="lucide:phone" aria-hidden="true"></iconify-icon></span><span class="txt"><small>Telepon</small><b data-phone-text>021 8242 1555</b></span><span class="go"><iconify-icon icon="lucide:arrow-up-right" aria-hidden="true"></iconify-icon></span></a>
+        <a class="info addr" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Salon+Ania+Jl.+Sedap+Malam+No.5+Jakasetia+Bekasi+Selatan"><span class="ico"><iconify-icon icon="lucide:map-pin" aria-hidden="true"></iconify-icon></span><span class="txt"><small>Alamat · Buka di Maps</small><b>Ruko Villa Jakasetia, Jl. Sedap Malam No. 5, Bekasi Selatan</b></span><span class="go"><iconify-icon icon="lucide:navigation" aria-hidden="true"></iconify-icon></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="logo" href="index.html"><img src="assets/salon-ania-logo.jpg" alt="Logo Salon ANIA"><span><b>SALON ANIA</b><small>BEAUTY &amp; HAIR STUDIO</small></span></a>
+        <p>Tempat merawat, menyegarkan, dan mengekspresikan pesona rambutmu. Datang apa adanya, pulang glowing.</p>
+        <div class="socials">
+          <a class="social ig" data-ig href="#"><iconify-icon icon="mdi:instagram" aria-hidden="true"></iconify-icon> Instagram</a>
+          <a class="social wa" data-wa href="#"><iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon> WhatsApp</a>
+        </div>
+      </div>
+      <div><h4>Jelajahi</h4><ul>
+        <li><a href="index.html">Beranda</a></li><li><a href="index.html#layanan">Layanan</a></li><li><a href="tim.html">Pencukur &amp; Stylist</a></li><li><a href="tim.html#galeri">Galeri Hasil Cukur</a></li><li><a href="testimoni.html">Testimoni</a></li></ul></div>
+      <div><h4>Layanan</h4><ul>
+        <li><a href="index.html#layanan">Potong &amp; Styling</a></li><li><a href="index.html#layanan">Hair Coloring</a></li><li><a href="index.html#layanan">Hair Spa &amp; Creambath</a></li><li><a href="index.html#layanan">Barber &amp; Shave</a></li><li><a href="index.html#layanan">Smoothing &amp; Curling</a></li></ul></div>
+      <div><h4>Kunjungi Kami</h4><ul class="f-contact">
+        <li><iconify-icon icon="lucide:map-pin" aria-hidden="true"></iconify-icon><span>Ruko Villa Jakasetia, Jl. Sedap Malam No. 5, Bekasi Selatan (Grand Galaxy)</span></li>
+        <li><iconify-icon icon="lucide:phone" aria-hidden="true"></iconify-icon><a data-tel href="#" data-phone-text>021 8242 1555</a></li>
+        <li><iconify-icon icon="mdi:instagram" aria-hidden="true"></iconify-icon><a data-ig href="#" data-ig-handle>@salonania</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-big" aria-hidden="true">ANIA</div>
+    <div class="footer-bottom"><span>© <span data-year></span> Salon ANIA · A little glow, a lot of you.</span><a href="#top">Kembali ke atas <iconify-icon icon="lucide:arrow-up" aria-hidden="true"></iconify-icon></a></div>
+  </div>
+</footer>
+<div class="fab">
+  <button class="fab-top" id="fabTop" aria-label="Kembali ke atas"><iconify-icon icon="lucide:arrow-up" aria-hidden="true"></iconify-icon></button>
+  <a class="fab-wa" data-wa href="#" aria-label="Chat WhatsApp"><iconify-icon icon="mdi:whatsapp" aria-hidden="true"></iconify-icon><span>Chat WhatsApp</span></a>
+</div>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Pratinjau foto">
+  <button class="lb-btn lb-close" aria-label="Tutup"><iconify-icon icon="lucide:x" aria-hidden="true"></iconify-icon></button>
+  <button class="lb-btn lb-prev" aria-label="Foto sebelumnya"><iconify-icon icon="lucide:chevron-left" aria-hidden="true"></iconify-icon></button>
+  <button class="lb-btn lb-next" aria-label="Foto berikutnya"><iconify-icon icon="lucide:chevron-right" aria-hidden="true"></iconify-icon></button>
+  <figure><img src="" alt=""><figcaption></figcaption></figure>
+</div>
+<script src="script.js"></script>
+<script src="carousel.js"></script>
+</body>
+</html>
